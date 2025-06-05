@@ -25,7 +25,7 @@ def create_vector_store(pdf_path, index_path=INDEX_NAME):
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
     vectorstore = FAISS.from_documents(texts, embeddings)
     vectorstore.save_local(index_path)
-    print("✅ Vector index created and saved.")
+    print("Vector index created and saved.")
 
 # STEP 2: Respond to questions
 def get_response(query):
