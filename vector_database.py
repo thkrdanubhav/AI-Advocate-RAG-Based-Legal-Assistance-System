@@ -3,10 +3,10 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from embedding_model import get_embedding_model
 
-# ✅ List your legal PDFs here
+# List your legal PDFs here
 pdf_files = ["the_constitution_of_india.pdf", "indian_penal_code.pdf"]
 
-print("🔄 Loading legal documents and splitting into chunks...")
+print("Loading legal documents and splitting into chunks...")
 
 # Step 1: Load all PDFs
 documents = []
@@ -25,7 +25,7 @@ faiss_db = FAISS.from_documents(text_chunks, embedding_model)
 # Step 4: Save FAISS index locally
 faiss_db.save_local("faiss_index")
 
-print("✅ FAISS index created and saved successfully with multiple legal sources.")
+print(" FAISS index created and saved successfully with multiple legal sources.")
 
 
 
