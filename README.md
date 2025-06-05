@@ -16,7 +16,7 @@ Technologies Used:
 How to Run:
 -----------
 1. Place your legal PDFs (e.g., Constitution, IPC) in the project folder.
-2. Run the vector database script to index documents:
+2. Run the vector database script to index documents and in last your app.py :
    
    ```bash
    python vector_database.py
