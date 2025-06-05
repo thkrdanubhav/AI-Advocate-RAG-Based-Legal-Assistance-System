@@ -21,4 +21,4 @@ How to Run:
    ```bash
    python vector_database.py
 
-   streamlit run app.py
+ streamlit run app.py
